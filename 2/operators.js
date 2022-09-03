@@ -4,8 +4,8 @@ let mult = 10*5;
 let divided = 10/5;
 let rem = 10%5;
 
-let comp = 10+5*10-8/2;
-let comp = (10+5)*(10-8)/2;
+console.log(10+5*10-8/2);
+console.log((10+5)*(10-8)/2);
 
 let a = 10;
 console.log(a++);

@@ -5,6 +5,7 @@ while(true){
         let card = Math.round(Math.random() * 12);
         hand.push(deckCards[card]);
     }
+    console.log(hand);
     let check = 0;
     if(hand.length == 3){
         if(hand.includes("2")){

@@ -21,7 +21,7 @@ console.log(rvrsStrng);
 
 //----------------------------------------------------------------------
 
-let tank = 3;
+let tank = 5;
 let road =[];
 for(let pos = Math.round(Math.random()*42); pos > 0; --pos){
     let mine = Math.round(Math.random()*2);
@@ -38,11 +38,12 @@ for(let turn of road){
     if(turn == true){
         --tank;
         if (tank>1){
-            console.log("damaged");
+            console.log(`Damaged! Lives: ${tank}`);
             continue;
         }
         else{
-            console.log("KIA");
+            --tank;
+            console.log(`KIA! Lives: ${tank}`);
             break;
         }
     }

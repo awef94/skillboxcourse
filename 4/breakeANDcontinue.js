@@ -1,5 +1,5 @@
 let deckCards = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "j", "q", "k", "a"];
-for(;;){
+while(true){
     let hand = [];
     while(hand.length<3){
         let card = Math.round(Math.random() * 12);

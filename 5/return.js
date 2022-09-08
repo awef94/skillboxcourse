@@ -10,7 +10,7 @@ function focus(cardDeck, wantedCard) {
             break;
         }
     }
-    console.log(check ? `Ok! Find!` : `Not ok! Not find!`);
+    console.log(check ? `Ok! Find! You card ${wantedCard}` : `Not ok! Not find! You card ${wantedCard}`);
 }
 
 function spelledCard() {

@@ -12,7 +12,7 @@ let automobile = {
     body: `sedan`,
     dateProd: {year: 2018, month: 2, day: 23},
 
-    getAge: function () {
+    getAge() {
         let now = new Date();
         let prod = new Date(
             this.dateProd.year,

@@ -20,3 +20,4 @@ console.log(filter(objects, `name`, `Masha`));
 console.log(filter(objects, `name`, `Vova`));
 console.log(filter(objects, `name`, `Il'ya`));
 //filter(objects, `name`, `Alex`);
+console.log(filter(objects, `surname`, `Savin`));

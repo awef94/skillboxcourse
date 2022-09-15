@@ -1,0 +1,26 @@
+.butt{
+    background-color: black;
+    color: aliceblue;
+    margin: 27px;
+}
+.header{
+    background-color: blue;
+    color: chocolate;
+    margin: 27px;
+}
+.pi{
+    background-color: crimson;
+    color: chartreuse;
+    margin: 27px;
+}
+.block{
+    width: 300px;
+    height: 300px;
+    border: black;
+    border: 13px groove;
+    border-color: green;
+    margin: 27px;
+}
+.txtarea{
+    margin: 27px;
+}

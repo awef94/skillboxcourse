@@ -5,7 +5,7 @@ document.addEventListener(`DOMContentLoaded`,
         let button = document.getElementById(`button`);
         let input = document.getElementById(`input`);
         let startStop;
-        let audio = new Audio(`pukane-7.mp3`);
+        let audio = new Audio(`cat.mp3`);
 
         function check() {
             let checker = parseInt(input.value);

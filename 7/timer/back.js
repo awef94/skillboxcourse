@@ -4,20 +4,37 @@ document.addEventListener(`DOMContentLoaded`,
         let count = document.getElementById(`count`);
         let button = document.getElementById(`button`);
         let input = document.getElementById(`input`);
+        let startStop;
+        let audio = new Audio(`pukane-7.mp3`);
 
-
-        function timer() {
-
-            if(typeof input.value === "number"){
-                count.textContent = input.value;
+        function check() {
+            let checker = parseInt(input.value);
+            if (typeof checker === `number` && checker >= 0) {
                 count.style.backgroundColor = `green`;
+                count.innerHTML = checker;
+                startStop = setInterval(timer, 1000);
             } else {
-                count.textContent = `input num!`;
+                count.textContent = `input number! or increase num!`;
                 count.style.backgroundColor = `red`;
             }
-
         }
 
-        button.addEventListener(`click`, timer)
+        function timer() {
+            let counter = parseInt(count.textContent);
+            if(counter<=0){
+                clearInterval(startStop);
+                audio.play();
+            }else{
+                console.log(counter--);
+                count.textContent = counter;
+            }
+        }
+
+        function drop() {
+            clearInterval(startStop);
+        }
+
+        button.addEventListener(`click`, drop);
+        button.addEventListener(`click`, check);
 
     });
